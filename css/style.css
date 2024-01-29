@@ -64,10 +64,26 @@ body {
 }
 
 .container {
-  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 428px) {
+    width: 428px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 1158px;
+  }
 }
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  } */
 
 /* Header Navigation */
 
@@ -89,13 +105,27 @@ body {
 }
 
 .header-menu {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  display: flex;
-  gap: 40px;
-  margin-left: 76px;
+  display: none;
+
+  @media screen and (min-widht: 768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    display: flex;
+    gap: 40px;
+    margin-left: 120px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+  }
 }
 
 .menu-link {
